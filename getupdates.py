@@ -7,5 +7,5 @@ r = requests.get(url)
 data = r.json()
 # pprint(data)
 for i in range(len(data)):
-    updates = data['result'][i]['message']['from']['first_name']
+    updates = data['result'][i]['message']['from']
     print(updates)
